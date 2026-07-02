@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="42_script.js" defer></script>
+</head>
+<body>
+    <p>External event handlers with JavaScript</p>
+    <button>Change color</button>
+    <p>Inline event handlers </p>
+    <button onclick="changeColor()">Press me</button>
+    <p>Old fashioned event handlers</p>
+    <button style="display: block;" onclick="{
+        let rndCol = `rgb(125 125 125)`;
+        return document.body.style.backgroundColor = rndCol;
+    }">Click Me</button>
+
+    <input id="textBox" type="text"/>
+    <div id="output"></div>
+</body>
+</html>
