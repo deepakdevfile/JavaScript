@@ -1,39 +1,48 @@
-function getHumanChoice(){
-    return prompt("Select Rock, Paper, Scissor: ").toLowerCase();
-}
+let rock = document.querySelector(".rock");
+let paper = document.querySelector(".paper");
+let scissor = document.querySelector(".scissor");
+let result = document.querySelector("p");
 
 function getComputerChoice(){
     let num = Math.floor(Math.random()*3)+1;
     if(num == 1){
-        return "rock";
+        return "Rock";
     } else if(num == 2){
-        return "paper";
+        return "Paper";
     } else {
-        return "scissor";
+        return "Scissor";
     }
 }
 
 function playRound(human, computer){
     if(human == computer){
-        alert("Your choice: " + human + ", Computer choice: " + computer + ". Draw!");
+        result.textContent = "Your choice: " + human + ", Computer choice: " + computer + ". Draw!";
         return;
     }
-    if(human == "rock" && computer == "paper"){
-        alert("Your choice: " + human + ", Computer choice: " + computer + ". You Lost :(");
+    if(human == "Rock" && computer == "Paper"){
+        result.textContent = "Your choice: " + human + ", Computer choice: " + computer + ". You Lost :(";
         return;
     }
-    if(human == "paper" && computer == "scissor"){
-        alert("Your choice: " + human + ", Computer choice: " + computer + ". You Lost :(");
+    if(human == "Paper" && computer == "Scissor"){
+        result.textContent = "Your choice: " + human + ", Computer choice: " + computer + ". You Lost :(";
         return;
     }
-    if(human == "scissor" && computer == "rock"){
-        alert("Your choice: " + human + ", Computer choice: " + computer + ". You Lost :(");
+    if(human == "Scissor" && computer == "Rock"){
+        result.textContent = "Your choice: " + human + ", Computer choice: " + computer + ". You Lost :(";
         return;
     }
 
-    alert("Your choice: " + human + ", Computer choice: " + computer + ". You Won :)");
+    result.textContent = "Your choice: " + human + ", Computer choice: " + computer + ". You Won :)";
 }
 
-while(true){
-    playRound(getHumanChoice(), getComputerChoice());
-}
+rock.addEventListener("click", (e) => {
+    playRound(rock.textContent, getComputerChoice());
+})
+
+paper.addEventListener("click", (e) => {
+    playRound(paper.textContent, getComputerChoice());
+})
+
+scissor.addEventListener("click", (e) => {
+    playRound(scissor.textContent, getComputerChoice());
+})
