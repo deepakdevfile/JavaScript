@@ -1,0 +1,10 @@
+path {
+    d: path("M150, 10 L40, 200 L260, 200 L260, 200Z");
+    fill: #4c6edb;
+    transition: all 2s ease;
+}
+
+path:active {
+    d: path("M220, 10 L40, 10 L40, 220 L220, 220Z");
+    fill: #6e40aa;
+}
