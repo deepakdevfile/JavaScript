@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Check shipping details </legend>
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" id="name" value="Mr Soft" readonly>
+        </div>
+        <div>
+            <label for="address">Address: </label>
+            <input type="text" id="address" value="23 Elastic Way, Viscous, Bright Ridge, CA" readonly>
+        </div>
+        <div>
+            <label for="zipcode">Zip/postal code:</label>
+            <input type="text" id="zipcode" value="94708" readonly>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Final instructions</legend>
+        <div>
+            <label for="sms">Send confirmation by SMS?</label>
+            <input type="checkbox" id="sms">
+        </div>
+        <div>
+            <label for="instruction">ANy special instructions?</label>
+            <textarea name="instruction" id="instruction"></textarea>
+        </div>
+        <div><button>Amend details</button></div>
+        <div><button>Submit</button></div>
+    </fieldset>
+</body>
+</html>

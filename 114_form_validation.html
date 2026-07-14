@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="#">
+        <label for="choice">your best fruit? *</label>
+        <input 
+            type="text" 
+            id="choice" 
+            name="choice" 
+            required
+            pattern="[Bb]anana|[Mm]ango"
+            >
+        <button>Submit</button>
+    </form> -->
+    <form action="#" method="get">
+        <p>
+            <label for="fruit">What is your favourite fruit? *</label>
+            <input type="text" id="fruit" name="fruit" required list="list"
+                pattern="[Bb]anana|[Aa]pple|[Cc]herry|[Gg]rape|[Kk]iwi|[Mm]ango|[Pp]ineapple|[Pp]apaya">
+            <datalist id="list">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+                <option value="dragon fruit">Dragon fruit</option>
+                <option value="grape">Grapes</option>
+                <option value="kiwi">Kiwi</option>
+                <option value="mago">Mango</option>
+                <option value="pineapple">Pineapple</option>
+                <option value="papaya">Papaya</option>
+            </datalist>
+        </p>
+        <p><button>submit</button></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Single line text field</h1>
+        <input type="text" id="comment1" name="comment1" value="I'm a text field">
+        <input type="text" id="comment" name="comment" value="I'm a text field" focused>
+        <input type="text" id="comment2" name="comment2" value="I'm a text field" disabled>
+    </div>
+    <div>
+        <h1>Password</h1>
+        <input type="password" id="password" name="password">
+    </div>
+    <div>
+        <h2>Hidden content</h2>
+        <input type="hidden" id="timestamp" name="timestamp" value="123456789">
+    </div>
+
+    <hr>
+
+    <div>
+        <h2>Checkbox</h2>
+        <fieldset>
+            <legend>Choose all the vegetables you like to eat</legend>
+            <div>
+                <input type="checkbox" id="carrots" name="carrots" value="carrots" checked>
+                <label for="carrots">Carrots</label>
+            </div>
+            <div>
+                <input type="checkbox" id="peas" name="peas" value="peas" disabled>
+                <label for="peas">Peas</label>
+            </div>
+            <div>
+                <input type="checkbox" id="cabbage" name="cabbage" value="cabbage">
+                <label for="cabbage">Cabbage</label>
+            </div>
+            <div>
+                <input type="checkbox" id="cauliflower" name="cauliflower" name="cauliflower" value="cauliflower">
+                <label for="cauliflower">Cauliflower</label>
+            </div>
+            <div>
+                <input type="checkbox" id="broccoli" name="broccoli" value="broccoli">
+                <label for="broccoli">Broccoli</label>
+            </div>
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend>What is your favourite meal?</legend>
+            <div>
+                <input type="radio" id="soup" name="meal" value="soup" checked>
+                <label for="soup">Soup</label>
+            </div>
+            <div>
+                <input type="radio" id="curry" name="meal" value="curry" disabled>
+                <label for="curry">Curry</label>
+            </div>
+            <div>
+                <input type="radio" id="pizza" name="meal" value="pizza" >
+                <label for="pizza">Pizza</label>
+            </div>
+            <div>
+                <input type="radio" id="tacos" name="meal" value="tacos">
+                <label for="tacos">Tacos</label>
+            </div>
+            <div>
+                <input type="radio" id="bolognaise" name="meal" value="bolognaise">
+                <label for="bolognaise">Bolognaise</label>
+            </div>
+        </fieldset>
+    </div>
+
+    <hr>
+
+    <div>
+        <h2>Input Buttons</h2>
+        <input type="submit" value="Submit Button">
+        <input type="reset" value="Reset Button">
+        <input type="button" value="Simple Button">
+    </div>
+    <div>
+        <h2>Button Buttons</h2>
+        <button type="submit">Submit Button</button>
+        <button type="reset" >Reset Button</button>
+        <button type="button" disabled>Do Nothing without JavaScript</button>
+    </div>
+    <div>
+        <h2>Image button</h2>
+        <input type="image" alt="Click me!" src="./javascript/dinosaur.png" width="80" height="30">
+    </div>
+    <div>
+        <h2>File picker</h2>
+        <input type="file" name="file" id="file" accept="image/*;capture=camera" multiple >
+        <input type="file" name="file" id="file" accept="video/*;capture=camcorder" multiple autofocus>
+        <input type="file" name="file" id="file" accept="audio/*;capture=microphone" multiple disabled>
+    </div>
+
+    <hr>
+
+    
+</body>
+</html>

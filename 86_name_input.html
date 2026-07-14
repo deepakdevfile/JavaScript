@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="86_script.js" defer></script>
+</head>
+<body>
+    <form action="https://httpbin.org/post" method="post">
+        <div>
+            <label for="first_name">First Name: </label>
+            <input type="text" name="first_name" id="first_name" placeholder="Bob">
+        </div>
+
+        <div>
+            <label for="last_name">Last Name: </label>
+            <input type="text" name="last_name" id="last_name" placeholder="Duglus">
+        </div>
+
+        <div>
+            <label for="age"></label>
+            <input type="text" name="age" id="age" placeholder="30">
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div>
+        <label for="username">What's your name? </label>
+        <input type="text" id="username">
+        <button class="greet-btn">Greet Me</button>
+    </div>
+    <h1 class="greeting"></h1>
+</body>
+</html>

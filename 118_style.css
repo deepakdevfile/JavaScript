@@ -1,0 +1,15 @@
+body{
+    display: flex;
+}
+
+.side {
+    background-image: url("fuck\ around\ find\ out.jfif");
+    background-repeat: no-repeat;
+    background-size: 300px auto;
+    background-color: black;
+}
+
+.logo img{
+    height: 100px;
+    width: 300px;
+}

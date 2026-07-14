@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="99_style.css">
+</head>
+<body>
+    <p>
+        <label for="simple">A simple select box: </label>
+        <select name="simple" id="simple" >
+            <option value="banana">Banana</option>
+            <option value="mango" >Mango</option>
+            <option value="lemon">Lemon</option>
+        </select>
+    </p>
+
+    <p>
+        <label for="groups">Select box with option groups:</label>
+        <select name="groups" id="groups">
+            <optgroup label="fruits">
+                <option value="banana">Banana</option>
+                <option value="Mango">Mango</option>
+                <option value="papaya">Papaya</option>
+            </optgroup>
+            <optgroup label="vegetables">
+                <option value="carrot">Carrot</option>
+                <option value="chilly">Chilly</option>
+                <option value="Potato">Potato</option>
+            </optgroup>
+        </select>
+    </p>
+
+    <p>
+        <label for="fruit">What's your favorite fruit?</label>
+        <input type="text" name="fruit" id="fruit" list="suggestion">
+        <datalist id="suggestion">
+            <option>Apple</option>
+            <option>Banana</option>
+            <option>Blackberry</option>
+            <option>Lemon</option>
+            <option>Mango</option>
+            <option>Peach</option>
+            <option>Pear</option>
+        </datalist>
+    </p>
+
+    <p>
+        <label for="datetime">Datetime local: </label>
+        <input type="datetime-local" id="datetime" name="datetime">
+    </p>
+
+    <p>
+        <label for="range">Range: </label>
+        <input type="range" id="range" name="range">
+    </p>
+
+    <p>
+        <label for="color">Color: </label>
+        <input type="color" id="color" name="color">
+    </p>
+    
+    <p>
+        <label for="meter">Meter:</label>
+        <meter id="meter" value="25" min="0" max="100" low="33" high="66" optimum="0">75</meter>
+    </p>
+    
+    <p>
+        <label for="progress">Progress: </label>
+        <progress id="progress" max="100" value="75">75/100</progress>
+    </p>
+
+    <p>
+        <label for="file">File picker: </label>
+        <input type="file" name="file" id="file">
+    </p>
+    <button>Submit?</button>
+
+</body>
+</html>

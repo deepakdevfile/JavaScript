@@ -1,0 +1,9 @@
+input[type="text"]:disabled{
+    background: #eeeeee;
+    border: 1px solid #cccccc;
+}
+
+label:has(+ :disabled){
+    color: #aaaaaa;
+}
+
