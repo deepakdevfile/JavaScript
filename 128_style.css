@@ -1,0 +1,22 @@
+.flex{
+    background-color:bisque;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grid{
+    background: orange;
+    height: 200px;
+    width: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+span{
+    background: darkred;
+    height: 20px;
+    width: 20px;
+}

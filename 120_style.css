@@ -1,0 +1,19 @@
+.item{
+    border: 2px solid blueviolet;
+    text-align: center;
+    background: rgb(51, 255, 0);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+}
+
+.first_row{
+    background-color: pink;
+}
+
+.last_column {
+    background-color: lightblue;
+}

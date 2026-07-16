@@ -1,0 +1,32 @@
+.layout{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.child{
+    background: orange;
+    border: 5px solid black;
+    min-height: 100px;
+    flex: calc(100% / 3);
+    text-align: center;
+    line-height: 100px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.layout2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+.child2{
+    background: orange;
+    min-height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border: 5px solid black;
+}
