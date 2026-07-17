@@ -5,8 +5,8 @@ let show = document.getElementById("show");
 let main_nav_list = document.getElementById("main-nav-list");
 let main_nav = document.getElementById("main-nav");
 
-menu_items_position.addEventListener("change", function(e){
-    main_nav_list.css("justify-content", e.target.find("option:selected").val());
+menu_items_position.addEventListener("change", (e) => {
+    main_nav_list.css("justify-content", this.find("option:selected").val());
 });
 
 menu_items.addEventListener("change", function(e){
